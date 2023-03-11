@@ -3,11 +3,8 @@ import path from 'path';
 import mustache from 'mustache-express';
 import dotenv from 'dotenv';
 import mainRoutes from './routes/routes';
-import { sequelizeConnect } from './instances/pg';
 
 dotenv.config();
-
-sequelizeConnect();
 
 const server = express();
 
