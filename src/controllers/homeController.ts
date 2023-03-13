@@ -26,7 +26,7 @@ export const email = async (req: Request, res: Response)=>{
       from: user,
       to: user,
       subject: 'Assunto de teste',
-      text: 'Opa Fulano Tudo bem?',
+      text: 'Opa Fulano Tudo bem, nova mensagem?',
     }
   
     let info = await transport.sendMail(message)
